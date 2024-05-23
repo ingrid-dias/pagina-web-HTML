@@ -5,15 +5,17 @@
     <meta name="description" content="Meu Portfólio">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Breaking Badzin ❤</title>
 </head>
 
 <body>
     <header>
 
-        <div id="header">
+        <div id="header" class="container_header">
 
-            <div id="titulo">
+            <div id="titulo" class="flex">
 
                 <h1>Breaking Bad</h1>
             </div>
@@ -21,86 +23,103 @@
             <div id="menu">
 
                 <nav>
-                    <ul>
+                    <ul class="hover flex">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
 
-                <div id="validador">
-                    <h2>Você gosta da Serie?</h2>
+            </div>
+            <div id="validador">
+                <h2>Você gosta da Serie?</h2>
+                <div class="flex evenly">
                     <input type="radio" value="sim">
-                    <label for="">Sim!</label><br>
-                    <input type="radio" value="claro">
-                    <label for="">Claro!</label><br>
-
+                    <label for="">Sim</label><br>
+                    <input type="radio" value="não">
+                    <label for="">Não</label><br>
                 </div>
 
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="home">
+    <main class="">
 
-            <!-- Texto da Seção Home -->
-            <article id="home_texto">
-                <h4>Conheça o universo de Breaking Bad</h4>
+        <section id="home">
+            <img class="logo borda"
+                src="assets/img/pngegg (1).png"
+                alt="Imagem de capa principal Breaking Bad">
+
+
+            <article id="sobre-texto borda" class="sobre-texto">
+                <h4>Conheça o universo de Breaking Bad</h4><br>
                 <p>O professor de química Walter White não acredita que sua vida possa piorar ainda mais. Quando
                     descobre que tem câncer terminal, Walter decide arriscar tudo para ganhar dinheiro enquanto pode,
-                    transformando sua van em um laboratório de metanfetamina.</p>
-                    
+                    transformando sua van em um laboratório de metanfetamina.</p><br>
+
                     <h4>Veja um pouco mais no trailer:</h4>
-                <a target="_blank" href="video.html">Trailer</a>
-            </article>
-
-            <article id="home_imagem">
-                <img src="assets/img/pngegg.png"
-                    alt="Imagem de capa Breaking Bad">
+                    <a target="_blank" href="video.html">Trailer</a>
             </article>
 
         </section>
 
-        <section id="about">
+        <section id="sobre" class="sobre_container">
 
-        </section>
+            <article id="sobre-texto " class="sobre-texto">
+                <h1>Quem sou eu?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
+                    inventore rem error harum blanditiis accusamus vitae, minus fugit consequatur? Dolorum maiores magni
+                    deleniti modi sit laudantium totam!
+                </p>
 
-        <section id="contato">
+                <div id="sobre-github" class="sobre_github flex">
+                    <a class="btn" target="_blank" href="https://github.com/ingrid-dias">Github</a>
 
-            <article id="redes_sociais">
-                <h3>Vamos nos conectar!</h3>
-                <p>Entre em contato comigo para compartilharmos experiências.</p>
-
-                <div id="icones_redes_sociais">
-                    <a href="">
-                        <img src="assets/img/Feedback-pana.png"/>
-                    </a>
+                    <p>13 Seguidores</p>
+                    <p>9 Repositórios</p>
                 </div>
+
             </article>
+
+            <img src="assets/img/Feedback-pana.png"
+                alt="Ícones de conexões">
+        </section>
+
+        <section id="contato" class="borda">
+
+            <h2>Me contate</h2>
 
             <form action="" method="POST">
-                <input type="hidden" name="_next" value="">
-                <input type="hidden" name="_captcha" value="false">
-
-                <label for="nome"><strong>Nome: </strong></label>
-                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
-
-                <label for="email"><strong>Email: </strong></label>
-                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-
-                <label for="subject"><strong>Assunto: </strong></label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
-
-                <label for="message"><strong>Mensagem: </strong></label>
-                <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
-
-                <button type="submit">Enviar</button>
+                <div>
+                    <input type="hidden" name="_next" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+                <div>
+                    <label for="nome"><strong>Nome: </strong></label>
+                    <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label for="email"><strong>Email: </strong></label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                    <label for="subject"><strong>Assunto: </strong></label>
+                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
+                </div>
+                <div>
+                    <label for="message"><strong>Mensagem: </strong></label>
+                    <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
         </section>
     </main>
 
     <footer>
-        <p> Feito com ❤ por Ingrid D - 2024 &copy;</p>
+        Feito com ❤ por Ingrid D - 2024
     </footer>
 </body>
 
